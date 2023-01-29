@@ -1,95 +1,27 @@
-/* 全体 */
-body {
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-.main-todoList {
-    width: 95%;
-    margin: 0 auto;
-}
-
-/* *{
-    box-sizing: border-box;
-} */
-/* タイトル */
-h1 {
-    position: relative;
-    margin-top: 100px;
-    font-size: 2em;
-}
-
-h1::before {
-    content: " トドリスト ";
-    font-size: 0.5em;
-    position: absolute;
-    top: -50%;
-    left: 25%;
-}
-
-/* トドの画像 */
-.todo {
-    width: 40%;
-}
-
-/* フォーム */
-form {
-    
-    border-radius: 5px;
-    width: 100%;
-    height: 5vh;
+/* top */
+.top{
     display: flex;
-    margin-bottom: 10%;
+}
+/* left */
+.left ,.rigth{
+    width: 25%;
+}
+.todo{
+    width: 10%;
 }
 
-#input {
-    border: 1px solid black;
-    border-right: 1px solid transparent;
-    border-radius: 5px 0 0 5px;
-    width: 80%;
-    text-align: center;
-    color: gray;
+
+/* メモインプット */
+.memoInput-box{
+    width: 50%;
+    margin: 0 auto;
 }
-
-#btn {
-    width: 20%;
-    text-align: center;
-    border: 2px solid navy;
-    border-radius: 10px;
-
-}
-
-/* タイトルとform */
-.h1-form {
-    width: 80%;
+.memo-Input{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    width: 50%;
 }
-
-/*　トドフォーム  */
-.container {
-    display: flex;
-    align-items: flex-end;
-
-}
-
-ul{
-    position: relative;
-}
-.list-back{
-    position: absolute;
-}
-/* js----------------- */
-.list {
-/* position: absolute; */
-top: 0;
- text-align:center;
- width:100%;
- border-bottom:1px solid black;
- display:flex;
- justify-content:space-between;
- padding-left:8%;
- padding-Right:8%;
- margin-top: 2em;
+/* js */
+.input{
+    border: 1px solid black;
 }

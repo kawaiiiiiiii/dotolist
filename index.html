@@ -6,35 +6,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>トドリスト</title>
-    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a9a0c3a540.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="main-todoList">
-        <div class="container">
-            <img class="todo" src="./todo_img/todo1_1.png" alt="トドの画像">
-            <div class="h1-form">
-                <h1>To do list</h1>
-                <form action="">
-                    <input type="text" id="input" placeholder="やること書く！">
-                    <input type="button" id="btn" value="todoo">
-                </form>
-            </div>
+    <div class="top">
+        <!-- left -->
+        <div class="left">
+            <img class="todo" src="./todo_img/todo1_1.png" alt="トドのイラスト">
+            <h1>OKU ROKU</h1>
         </div>
-        <ul class="todo-list">
-            <img class="list-back" src="./todo_img/15940-removebg-preview.png" alt=>
-            <!-- ここに要素が追加されていく -->
-            <li class="list">a <div class="delete"><i class="fa-regular fa-trash-can"></i></div>
-            </li>
-            <li class="list">a <div class="delete"><i class="fa-regular fa-trash-can"></i></div>
-            </li>
-            <li class="list">a <div class="delete"><i class="fa-regular fa-trash-can"></i></div>
-            </li>
-            
-        </ul>
+
+
+
+        <div class="memoInput-box">
+            <!-- 新しい知識メモめものボタンクリックされたら表示 -->
+            <div class="memoNew">
+                <p>新しい知識メモメモ</p>
+                <h2>New Knowledge</h2>
+            </div>
+            <!-- メモの選択ボタン -->
+            <input type="button" id="memoBtn" value="HTML">
+            <input type="button" id="memoBtn" value="CSS">
+            <input type="button" id="memoBtn" value="JS">
+            <input type="button" id="memoBtn" value="Jquery">
+
+            <div class="memo-Input">
+                HTMLについて入力していくー！
+                <!-- <input type="text" id="title" class="input" placeholder="タグ名を入力"> -->
+                <!-- <textarea name="content" id="content" class="input" cols="30" rows="10"
+                    placeholder="使い方の説明を入力"></textarea> -->
+                <!-- <input type="text" id="link" class="input" placeholder="参考ページリンク"> -->
+                <!-- <input type="button" id="kiroku" value="記憶より記録"> -->
+            </div>
+        
+        <!-- 記憶より記録ボタンクリックで表示される入力欄 -->
+        <dl class="memo-list">
+            <!-- ここにメモ入力欄が表示される -->
+
+        </dl>
     </div>
+        <div class="right">
+            <p>記憶より記録</p>
+        </div>
+    </div>
+    <!-- <i class="fa-solid fa-book"></i>
+    <i class="fa-solid fa-square-js"></i>
+    <i class="fa-solid fa-code"></i> -->
     <script src="./script.js"></script>
 </body>
 
