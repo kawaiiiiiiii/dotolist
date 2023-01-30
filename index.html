@@ -44,10 +44,10 @@
             <div class="memo-Input">
                 <div class="memoinput-wrap">
                     <div class="memoinput-box">
-                        <span>タグ名を入力</span><br><input type="text" id="title" class="input" placeholder=""><br>
-                        <span>使い方の説明を入力</span><br> <textarea name="content" id="content" class="input" cols="30"
-                            rows="10" placeholder="忘れたくないことメモメモ"></textarea><br>
-
+                        <span class="js-title">何について記録する？</span><br>
+                        <input type="text" id="title" class="input" placeholder=""><br>
+                        <span class="js-content">使い方の説明を入力</span><br>
+                        <textarea name="content" id="content" class="input" cols="50"rows="10" placeholder="忘れたくないことメモメモ"></textarea><br>
                         <input type="text" id="link" class="input" placeholder="参考ページリンク">
                         <input type="button" id="kiroku" value="記憶より記録">
                     </div>
@@ -56,24 +56,52 @@
 
             <!-- 記憶より記録ボタンクリックで表示される入力欄 -->
             <div class="memo-list">
-                <dl class="memo-list-html">
+                <dl class="memo-list-HTML">
                     <h3>HTML</h3>
                     <!-- ここにメモ入力欄が表示される -->
+                    <!-- <div>
+                        <dt>a9a0c3a540</dt>
+                        <dd>ssss
+                        </dd>
+                        <a href="">aaaaaa</a>
+                        <div class="delete">delete</div>
+                    </div> -->
 
                 </dl>
-                <dl class="memo-list-css">
+                <dl class="memo-list-CSS">
                     <!-- ここにメモ入力欄が表示される -->
                     <h3>CSS</h3>
+                    <!-- <div>
+                        <dt>a9a0c3a540</dt>
+                        <dd>ssss
+                        </dd>
+                        <a href="">aaaaaa</a>
+                        <div class="delete">delete</div>
+                    </div> -->
 
                 </dl>
-                <dl class="memo-list-js">
+                <dl class="memo-list-JS">
                     <!-- ここにメモ入力欄が表示される -->
                     <h3>JAVASCRIPT</h3>
+                    <!-- <div>
+                        <dt>a9a0c3aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa540</dt>
+                        <dd>ssaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaass
+                        </dd>
+                        <a href="">aaaaaaaaaaaaaaaaaaaaaaa</a>
+                        <div class="delete">delete</div>
+                    </div> -->
 
                 </dl>
-                <dl class="memo-list-jq">
+                <dl class="memo-list-Jquery">
                     <!-- ここにメモ入力欄が表示される -->
                     <h3>Jquery</h3>
+                    <!-- <div>
+                        <dt>a9a0c3a540</dt>
+                        <dd>ssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                        </dd>
+                        <a href="">aaaaaa</a>
+                        <div class="delete">delete</div>
+                    </div> -->
 
 
                 </dl>
@@ -85,7 +113,7 @@
             <!-- <i class="fa-solid fa-book"></i>
     <i class="fa-solid fa-square-js"></i>
     <i class="fa-solid fa-code"></i> -->
-            <script src="./script.js"></script>
+            
         </div>
 
         <footer>
@@ -93,6 +121,7 @@
             <span>忘れたらいつでも戻っておいで</span><img class="ebi" src="./todo_img/ebi.png" alt="エビの画像">
         </footer>
     </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>

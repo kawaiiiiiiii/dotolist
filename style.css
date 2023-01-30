@@ -59,6 +59,7 @@ header,.memo-list{
     font-size: 1em;
     padding: 5px 10px;
     margin-right: 10px;
+    cursor: pointer;
 
 }
 .memoinput-wrap{
@@ -82,17 +83,53 @@ header,.memo-list{
     color:white;
     font-size: 1em;
     padding: 5px 10px;
-    margin-right: 10px
+    margin-right: 10px;
+    cursor: pointer;
+    
 }
 
 /* 記憶より記録ボタン押された内容表示ゾーン */
 .memo-list{
+    inline-size: 100%;
     display: flex;
     margin-top: 30px;
+    
 }
 .memo-list dl{
     width: 25%;
     text-align: center;
+    
+}
+/* js */
+.memo-list div{
+    background-color: #d5eeff;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.memo-list dd,.memo-list dt,.memo-list a{
+    margin: 0;
+    margin-bottom: 15px;
+    inline-size: 100%;
+    overflow-wrap: break-word;
+    text-align: start;
+    color: #1b435d;
+}
+.memo-list dt{
+    font-weight: bold;
+    font-size: 1.3em;
+
+}
+.memo-list .delete{
+    background-color:transparent ;
+    width: 50px;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+
 }
 /* フッター */
 footer{
