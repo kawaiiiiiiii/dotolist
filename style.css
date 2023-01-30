@@ -1,27 +1,110 @@
-/* top */
-.top{
-    display: flex;
+
+.contents{
+    /* width: 1440px;
+    max-width: 1200px; */
+    margin: 0 auto;
 }
-/* left */
-.left ,.rigth{
-    width: 25%;
+.title-box{
+    display: flex;
+    justify-content: center;
+}
+h1,h2,h3,p,span{
+    color: #1b435d;
+}
+/* top -----------------*/
+header,.memo-list{
+    width: 100%;
+    background-color: #78bbe6;
 }
 .todo{
-    width: 10%;
+    height: 100px;
+}
+.top-title,.memo-New{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.top-title p,.memo-New p{
+    margin-bottom: 0;
+}
+.top-title h1,.memo-New h2{
+    margin-top: 0;
 }
 
+
+/* 新しい知識メモメモ--------- */
+/* メモタイトル */
+.memoInput-box{
+    margin-top: 80px;
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
 
 /* メモインプット */
 .memoInput-box{
-    width: 50%;
     margin: 0 auto;
+    background-color: #d5eeff;
 }
-.memo-Input{
+.memo-Btn{
+    text-align: center;
+    margin-bottom: 50px
+}
+#memoBtn{
+    background-color: #f99f48;
+    border: 2px solid #f99f48;
+    box-shadow: 5px 5px 5px #78bbe6 ;
+    border-radius: 15px;
+    color:white;
+    font-size: 1em;
+    padding: 5px 10px;
+    margin-right: 10px;
+
+}
+.memoinput-wrap{
     display: flex;
-    flex-direction: column;
-    width: 50%;
+    justify-content: center;
 }
 /* js */
 .input{
-    border: 1px solid black;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 1em;
+    padding: 5px;
+}
+#kiroku{
+    margin-left: 10px;
+    background-color: #f99f48;
+    border: 2px solid #f99f48;
+    box-shadow: 5px 5px 5px #78bbe6 ;
+    border-radius: 20px;
+    color:white;
+    font-size: 1em;
+    padding: 5px 10px;
+    margin-right: 10px
+}
+
+/* 記憶より記録ボタン押された内容表示ゾーン */
+.memo-list{
+    display: flex;
+    margin-top: 30px;
+}
+.memo-list dl{
+    width: 25%;
+    text-align: center;
+}
+/* フッター */
+footer{
+    background-color: #78bbe6;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.ebi{
+    margin: 5px;
+    height: 70%;
 }

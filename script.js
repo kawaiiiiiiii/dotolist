@@ -123,6 +123,35 @@ memoBtn[0].addEventListener("click", function () {
 })
 
 // htmlボタン終了----------------------------------
+function htmlList() {
+     // li要素を作成
+     let list_title = document.createElement("dt");
+     let list_content = document.createElement("dd");
+     let list_link = document.createElement("dd");
+     // console.log(list);
+     // liにクラス名を追加
+     // list_title.classList.add("list-title");
+     // list_content.classList.add("list-title");
+     list_link.classList.add("list-title");
+     // liにユーザーが入力した内容を入れる
+     list_title.textContent = title;
+     list_content.textContent = content;
+     list_link.textContent = link;
+
+     // ulの要素を取得
+     let list_wrap = document.querySelector(".memo-list-html");
+     // console.log(list_wrap);
+     // ul(親)にli(子)を会わせてあげる
+     list_wrap.appendChild(list_title);
+     list_wrap.appendChild(list_content);
+     list_wrap.appendChild(list_link);
+
+      // inputの中に入力された文字を削除する
+      for (let i = 0; i <= 2; i++) {
+         // console.log(i);
+         input[i].value = ""
+      }
+}
 
 
 // cssボタン--------------------------------------------

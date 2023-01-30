@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,66 +11,88 @@
 </head>
 
 <body>
-    <div class="top">
-        <!-- left -->
-        <div class="left">
-            <img class="todo" src="./todo_img/todo1_1.png" alt="トドのイラスト">
-            <h1>OKU ROKU</h1>
-        </div>
+    <div class="contents">
+        <header>
+            <div class="title-box">
+                <img class="todo" src="./todo_img/todo1_1.png" alt="トドのイラスト">
+                <div class="top-title">
+                    <p>記憶より記録</p>
+                    <h1>OKU ROKU</h1>
+                </div>
+            </div>
+        </header>
 
 
 
         <div class="memoInput-box">
             <!-- 新しい知識メモめものボタンクリックされたら表示 -->
-            <div class="memoNew">
-                <p>新しい知識メモメモ</p>
-                <h2>New Knowledge</h2>
+            <div class="title-box">
+                <img class="todo" src="./todo_img/gomaaza.png" alt="">
+                <div class="memo-New">
+                    <p>新しい知識メモメモ</p>
+                    <h2>New Knowledge</h2>
+                </div>
             </div>
             <!-- メモの選択ボタン -->
-            <input type="button" id="memoBtn" value="HTML">
-            <input type="button" id="memoBtn" value="CSS">
-            <input type="button" id="memoBtn" value="JS">
-            <input type="button" id="memoBtn" value="Jquery">
+            <div class="memo-Btn">
+                <input type="button" id="memoBtn" value="HTML">
+                <input type="button" id="memoBtn" value="CSS">
+                <input type="button" id="memoBtn" value="JS">
+                <input type="button" id="memoBtn" value="Jquery">
+            </div>
 
             <div class="memo-Input">
-                
-                <!-- <input type="text" id="title" class="input" placeholder="タグ名を入力"> -->
-                <!-- <textarea name="content" id="content" class="input" cols="30" rows="10"
-                    placeholder="使い方の説明を入力"></textarea> -->
-                <!-- <input type="text" id="link" class="input" placeholder="参考ページリンク"> -->
-                <!-- <input type="button" id="kiroku" value="記憶より記録"> -->
+                <div class="memoinput-wrap">
+                    <div class="memoinput-box">
+                        <span>タグ名を入力</span><br><input type="text" id="title" class="input" placeholder=""><br>
+                        <span>使い方の説明を入力</span><br> <textarea name="content" id="content" class="input" cols="30"
+                            rows="10" placeholder="忘れたくないことメモメモ"></textarea><br>
+
+                        <input type="text" id="link" class="input" placeholder="参考ページリンク">
+                        <input type="button" id="kiroku" value="記憶より記録">
+                    </div>
+                </div>
             </div>
-        
-        <!-- 記憶より記録ボタンクリックで表示される入力欄 -->
-        <dl class="memo-list-html">
-            <span>HTML</span>
-            <!-- ここにメモ入力欄が表示される -->
 
-        </dl>
-        <dl class="memo-list-css">
-            <!-- ここにメモ入力欄が表示される -->
-            <span>CSS</span>
+            <!-- 記憶より記録ボタンクリックで表示される入力欄 -->
+            <div class="memo-list">
+                <dl class="memo-list-html">
+                    <h3>HTML</h3>
+                    <!-- ここにメモ入力欄が表示される -->
 
-        </dl>
-        <dl class="memo-list-js">
-            <!-- ここにメモ入力欄が表示される -->
-            <span>JAVASCRIPT</span>
+                </dl>
+                <dl class="memo-list-css">
+                    <!-- ここにメモ入力欄が表示される -->
+                    <h3>CSS</h3>
 
-        </dl>
-        <dl class="memo-list-jq">
-            <!-- ここにメモ入力欄が表示される -->
-            <span>Jquery</span>
+                </dl>
+                <dl class="memo-list-js">
+                    <!-- ここにメモ入力欄が表示される -->
+                    <h3>JAVASCRIPT</h3>
 
-        </dl>
-    </div>
-        <div class="right">
-            <p>記憶より記録</p>
-        </div>
-    </div>
-    <!-- <i class="fa-solid fa-book"></i>
+                </dl>
+                <dl class="memo-list-jq">
+                    <!-- ここにメモ入力欄が表示される -->
+                    <h3>Jquery</h3>
+
+
+                </dl>
+
+            </div>
+
+
+
+            <!-- <i class="fa-solid fa-book"></i>
     <i class="fa-solid fa-square-js"></i>
     <i class="fa-solid fa-code"></i> -->
-    <script src="./script.js"></script>
+            <script src="./script.js"></script>
+        </div>
+
+        <footer>
+            <img class="ebi" src="./todo_img/ebi2.png" alt="エビの画像">
+            <span>忘れたらいつでも戻っておいで</span><img class="ebi" src="./todo_img/ebi.png" alt="エビの画像">
+        </footer>
+    </div>
 </body>
 
 </html>
